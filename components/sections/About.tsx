@@ -21,11 +21,11 @@ export default function About() {
               </p>
               
               <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-zinc-900 dark:text-white">
-                Design is how I solve problems and create impact.
+                Technology and design are how I build functional solutions.
               </h1>
               
               <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-md">
-                I&apos;m a multidisciplinary designer who loves crafting meaningful and functional digital experiences. With a keen eye for detail and a passion for design, I help brands and products connect with their audience.
+                I&apos;m a Informatics student and tech enthusiast who loves bridging the gap between thoughtful design and structured engineering. With a strong focus on system workflows, clean user interfaces, and functional performance, I build digital experiences that are not only intuitive to use but also reliable under the hood.
               </p>
               
               {/* Tombol CTA */}
@@ -51,7 +51,7 @@ export default function About() {
                     <Briefcase className="w-6 h-6 text-zinc-800 dark:text-zinc-300" />
                   </div>
                   <div>
-                    <p className="font-medium text-zinc-800 dark:text-zinc-200">5+ Years of Experience</p>
+                    <p className="font-medium text-zinc-800 dark:text-zinc-200">3+ Years of Experience</p>
                   </div>
                 </div>
 

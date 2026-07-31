@@ -5,12 +5,12 @@ import Image from "next/image";
 const TOOLS = [
   { name: "Figma", icon: "/images/tools/icon-1.png" },
   { name: "Hermes Agent", icon: "/images/tools/icon-2.png" },
-  { name: "Docker", icon: "/images/tools/icon-3.jpg" },
-  { name: "Open Code", icon: "/images/tools/icon-4.jpg" },
+  { name: "Docker", icon: "/images/tools/icon-3.png" },
+  { name: "Open Code", icon: "/images/tools/icon-4.png" },
   { name: "Github", icon: "/images/tools/icon-5.png" },
-  { name: "Unity", icon: "/images/tools/icon-6.png" },
-  { name: "Vercel", icon: "/images/tools/icon-7.png" },
-  { name: "Blender", icon: "/images/tools/icon-8.png" },
+  { name: "Canva", icon: "/images/tools/icon-6.png" },
+  { name: "Google Colab", icon: "/images/tools/icon-7.png" },
+  { name: "Power BI", icon: "/images/tools/icon-8.png" },
 ];
 
 export default function Tools() {
@@ -20,12 +20,12 @@ export default function Tools() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Bagian Judul */}
-        <div className="text-center mb-24 md:mb-32 relative z-30">
+        <div className="text-center mb-24 md:mb-25 relative z-30">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Tools I Use
           </h2>
           <p className="text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto">
-            The tools I reach for when designing and building digital products.
+            The core toolkit powering my design, development, and analytical workflow.
           </p>
         </div>
 
