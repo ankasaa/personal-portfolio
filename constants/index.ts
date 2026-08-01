@@ -21,7 +21,7 @@ export const PROJECTS = [
     id: 1,
     title: "Generative 3D Icons",
     description: "Platform SaaS untuk generate icon 3D dengan AI. Menggunakan Next.js, Three.js, dan OpenAI API.",
-    image: "/images/gambar_1.png", // Gambar kamu yang sudah diupload
+    image: "/images/hero/test.png", // Gambar kamu yang sudah diupload
     tags: ["Next.js", "Three.js", "AI", "SaaS"],
     href: "https://github.com/yourusername/project1", // Ganti dengan link proyek kamu
   },

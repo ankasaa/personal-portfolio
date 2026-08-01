@@ -1,63 +1,188 @@
 "use client";
 
+import type { ReactNode } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { PERSONAL_DATA } from "@/constants";
+import { cn } from "@/lib/utils";
 import BackgroundGradient from "@/components/ui/BackgroundGradient";
 
-export default function Hero() {
-  const { name, title, bio, location, availableForWork } = PERSONAL_DATA;
+/* ------------------------------------------------------------------ */
+/*  Animation variants                                                  */
+/* ------------------------------------------------------------------ */
+
+const staggerContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
+
+/* ------------------------------------------------------------------ */
+/*  Placeholder: Profile Image                                         */
+/* ------------------------------------------------------------------ */
+
+function ProfilePlaceholder() {
+  return (
+    <motion.div
+      variants={fadeIn}
+      className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl
+        border border-zinc-300/60 bg-gradient-to-br from-zinc-100 via-blue-50 to-purple-50
+        shadow-lg shadow-zinc-900/5
+        dark:border-zinc-700/50 dark:from-zinc-800 dark:via-blue-950/30 dark:to-purple-950/20
+        dark:shadow-black/20"
+    >
+      <Image
+        src="/images/hero/img-test1.png"
+        alt="Ankasaa"
+        fill
+        className="object-cover"
+      />
+    </motion.div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Placeholder: Project Showcase                                      */
+/* ------------------------------------------------------------------ */
+
+function ShowcasePlaceholder() {
+  return (
+    <motion.div
+      variants={fadeIn}
+      className="group relative aspect-video w-full overflow-hidden rounded-3xl bg-transparent"
+    >
+      {/* Showcase image */}
+      <Image
+        src="/images/hero/img-project-1.png"
+        alt="Project Preview"
+        fill
+        className="object-cover"
+      />
+
+      {/* Subtle shine on hover */}
+      <div
+        className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r
+          from-transparent via-white/5 to-transparent transition-transform duration-700
+          group-hover:translate-x-full"
+      />
+    </motion.div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  CTA Button (used for both primary & secondary)                    */
+/* ------------------------------------------------------------------ */
+
+interface CtaButtonProps {
+  children: ReactNode;
+  variant: "primary" | "secondary";
+  href?: string;
+}
+
+function CtaButton({ children, variant, href }: CtaButtonProps) {
+  const Component = href ? "a" : "button";
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      {/* Background Gradient - ditempatkan di belakang */}
+    <motion.div variants={fadeIn} whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
+      <Component
+        href={href}
+        className={cn(
+          "inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-medium",
+          "transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+          variant === "primary" &&
+            "bg-zinc-900 text-white shadow-md shadow-zinc-900/15 hover:bg-zinc-800 hover:shadow-lg hover:shadow-zinc-900/20 dark:bg-zinc-100 dark:text-zinc-900 dark:shadow-zinc-100/15 dark:hover:bg-white",
+          variant === "secondary" &&
+            "border border-zinc-300 bg-transparent text-zinc-700 shadow-sm shadow-zinc-900/5 hover:border-zinc-400 hover:bg-zinc-100/70 dark:border-zinc-600 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:bg-zinc-900/70"
+        )}
+      >
+        {children}
+      </Component>
+    </motion.div>
+  );
+}
+
+/* ================================================================== */
+/*  Hero Section                                                        */
+/* ================================================================== */
+
+export default function Hero() {
+  return (
+    <section
+      className="relative min-h-screen flex items-center justify-center
+        px-4 py-24 md:px-8 lg:px-12 overflow-hidden"
+    >
+      {/* ---------- Background ---------- */}
       <BackgroundGradient />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        {/* Nama */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight"
-        >
-          {name}
-        </motion.h1>
-
-        {/* Jabatan */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-2 text-2xl md:text-3xl font-medium text-blue-600 dark:text-blue-400"
-        >
-          {title}
-        </motion.h2>
-
-        {/* Bio */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-        >
-          {bio}
-        </motion.p>
-
-        {/* Badge Status & Lokasi */}
+      {/* ---------- Grid ---------- */}
+      <div
+        className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-12
+          lg:flex-row lg:gap-20"
+      >
+        {/* ================== LEFT COLUMN ================== */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-6 flex flex-wrap items-center justify-center gap-4"
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="flex w-full max-w-xl flex-col items-center text-center
+            lg:items-start lg:text-left"
         >
-          {availableForWork && (
-            <span className="px-3 py-1 text-sm font-medium text-green-700 bg-green-100 dark:bg-green-900/30 dark:text-green-400 rounded-full">
-              🟢 Tersedia untuk Kerja / Freelance
-            </span>
-          )}
-          <span className="px-3 py-1 text-sm text-gray-600 dark:text-gray-400">
-            📍 {location}
-          </span>
+          {/* Profile + Name */}
+          <div className="flex flex-col items-center gap-5 sm:flex-row sm:gap-6">
+            {/* Profile placeholder */}
+            <ProfilePlaceholder />
+
+            {/* Name */}
+            <motion.h1
+              variants={fadeIn}
+              className="text-4xl font-bold tracking-tight
+                text-zinc-900 dark:text-zinc-50
+                sm:text-5xl md:text-6xl"
+            >
+              Ankasaa
+            </motion.h1>
+          </div>
+
+          {/* Headline */}
+          <motion.p
+            variants={fadeIn}
+            className="mt-4 max-w-lg text-lg leading-relaxed
+              text-zinc-600 dark:text-zinc-400
+              sm:text-xl"
+          >
+            Design Engineer who ships products, not just mockups.
+          </motion.p>
+
+          {/* CTAs */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            <CtaButton href="#contact" variant="primary">
+              Discuss a Project
+            </CtaButton>
+            <CtaButton variant="secondary">
+              Download CV
+            </CtaButton>
+          </div>
+        </motion.div>
+
+        {/* ================== RIGHT COLUMN ================== */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="w-full max-w-2xl"
+        >
+          <ShowcasePlaceholder />
         </motion.div>
       </div>
     </section>
