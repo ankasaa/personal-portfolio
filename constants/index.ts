@@ -19,19 +19,19 @@ export const NAVIGATION_LINKS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Generative 3D Icons",
-    description: "Platform SaaS untuk generate icon 3D dengan AI. Menggunakan Next.js, Three.js, dan OpenAI API.",
+    title: "Aksara Rental",
+    description: "Platform Jual beli sewa kamera sebali.",
     image: "/images/hero/test.png", // Gambar kamu yang sudah diupload
     tags: ["Next.js", "Three.js", "AI", "SaaS"],
-    href: "https://github.com/yourusername/project1", // Ganti dengan link proyek kamu
+    href: "https://aksara-rental-camera.vercel.app/", // Ganti dengan link proyek kamu
   },
   {
     id: 2,
-    title: "Absen.id",
-    description: "Sistem absensi berbasis QR Code dan Face Recognition untuk perusahaan. Mobile-first dengan PWA.",
-    image: "/images/placeholder.png", // Ganti jika sudah ada gambar 2
+    title: "SIPAKTI",
+    description: "Sistem peminjeman kelas kosong berbasis QR Code  untuk mahasiswa. Mobile-first dengan PWA.",
+    image: "/images/hero/test3.png", // Ganti jika sudah ada gambar 2
     tags: ["React", "Face API", "PWA", "Firebase"],
-    href: "https://github.com/yourusername/project2",
+    href: "https://siprakti.thegt.my.id/",
   },
   {
     id: 3,
