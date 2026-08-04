@@ -9,6 +9,7 @@ import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
+
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);

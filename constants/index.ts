@@ -20,7 +20,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Aksara Rental",
-    description: "Platform Jual beli sewa kamera sebali.",
+    description: "Platform Jual beli sewa kamera.",
     image: "/images/hero/test.png", // Gambar kamu yang sudah diupload
     tags: ["Next.js", "Three.js", "AI", "SaaS"],
     href: "https://aksara-rental-camera.vercel.app/", // Ganti dengan link proyek kamu
@@ -35,10 +35,18 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "Personal portfolio modern dengan Next.js 15, Tailwind CSS v4, dan Framer Motion.",
-    image: "/images/placeholder.png", // Ganti jika sudah ada gambar 3
-    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-    href: "https://github.com/yourusername/project3",
+    title: "DanaKasa - Financial Planning & Education Platform",
+    description: "Platform edukasi finansial modern dengan UI/UX premium. Dilengkapi kalkulator cerdas, integrasi Dark Mode dinamis yang bebas dari hydration error, serta animasi slider interaktif.",
+    image: "/images/hero/test4.png", // Ganti jika sudah ada gambar 3
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
+    href: "https://danakasa-next.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "DanaKasa - Financial Planning & Education Platform",
+    description: "Platform edukasi finansial modern dengan UI/UX premium. Dilengkapi kalkulator cerdas, integrasi Dark Mode dinamis yang bebas dari hydration error, serta animasi slider interaktif.",
+    image: "/images/hero/test5.png", // Ganti jika sudah ada gambar 3
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
+    href: "https://danakasa-next.vercel.app/",
   },
 ];
