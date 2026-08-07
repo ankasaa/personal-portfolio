@@ -15,6 +15,57 @@ export const NAVIGATION_LINKS = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "#contact" },
 ];
+export const CERTIFICATIONS = [
+  {
+    id: 1,
+    title: "Front-End Web Developer Expert",
+    issuer: "Dicoding",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 2,
+    title: "Google Data Analytics",
+    issuer: "Coursera",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 3,
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 4,
+    title: "Professional Scrum Master I",
+    issuer: "Scrum.org",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 5,
+    title: "Meta Front-End Developer",
+    issuer: "Coursera",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 6,
+    title: "Microsoft Azure AI Fundamentals",
+    issuer: "Microsoft",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 7,
+    title: "IBM Full Stack Software Developer",
+    issuer: "IBM",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: 8,
+    title: "Google UX Design",
+    issuer: "Coursera",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+
 // src/constants/index.ts
 export const PROJECTS = [
   {
