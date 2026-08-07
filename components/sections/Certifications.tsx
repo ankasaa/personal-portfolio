@@ -6,9 +6,17 @@ export default function Certifications() {
   return (
     <section id="certifications" className="py-20 md:py-32">
       <Container>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
-          Sertifikat &amp; Pencapaian
-        </h2>
+        <div className="flex flex-col items-center text-center mb-12 md:mb-16">
+          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-semibold rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-400">
+            🎓 Milestones
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">
+            Sertifikat &amp; Pencapaian
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mt-4">
+            Kumpulan sertifikasi dan pencapaian profesional sebagai bukti dedikasi saya dalam mengikuti perkembangan standar industri teknologi.
+          </p>
+        </div>
       </Container>
 
       <div className="relative overflow-hidden w-full mt-10 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
