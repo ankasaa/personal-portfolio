@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/lib/ThemeProvider";
 import { NAVIGATION_LINKS } from "@/constants";
@@ -12,8 +13,19 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isActive = (href: string) => pathname === href;
+
+  const linkClass = (href: string) =>
+    cn(
+      "text-sm transition",
+      isActive(href)
+        ? "text-zinc-900 dark:text-white font-semibold"
+        : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white"
+    );
 
   // Efek blur saat scroll
   useEffect(() => {
@@ -48,7 +60,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition"
+              className={linkClass(link.href)}
             >
               {link.name}
             </Link>
@@ -92,7 +104,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition"
+                className={linkClass(link.href)}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
