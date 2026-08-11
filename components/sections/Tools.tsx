@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const TOOLS = [
   { name: "Figma", icon: "/images/tools/icon-1.png" },
-  { name: "Hermes Agent", icon: "/images/tools/icon-2.png" },
+  { name: "Hermes Agent", icon: "/images/tools/icon-2.png", invertInDarkMode: true },
   { name: "Docker", icon: "/images/tools/icon-3.png" },
-  { name: "Open Code", icon: "/images/tools/icon-4.png" },
-  { name: "Github", icon: "/images/tools/icon-5.png" },
+  { name: "Open Code", icon: "/images/tools/icon-4.png", invertInDarkMode: true },
+  { name: "Github", icon: "/images/tools/icon-5.png", invertInDarkMode: true },
   { name: "Canva", icon: "/images/tools/icon-6.png" },
   { name: "Google Colab", icon: "/images/tools/icon-7.png" },
   { name: "Power BI", icon: "/images/tools/icon-8.png" },
@@ -37,7 +37,7 @@ export default function Tools() {
                   src={tool.icon}
                   alt={tool.name}
                   fill
-                  className="object-contain"
+                  className={tool.invertInDarkMode ? "object-contain dark:invert" : "object-contain"}
                   sizes="(max-width: 768px) 36px, 40px"
                 />
               </div>
