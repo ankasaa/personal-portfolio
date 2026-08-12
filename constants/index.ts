@@ -18,9 +18,9 @@ export const NAVIGATION_LINKS = [
 export const CERTIFICATIONS = [
   {
     id: 1,
-    title: "Front-End Web Developer Expert",
-    issuer: "Dicoding",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
+    title: "Data-AI Agent For Data Analysis",
+    issuer: "IBM-Skillsbuild",
+    image: "/images/Serti/IBM-C1.png",
   },
   {
     id: 2,
