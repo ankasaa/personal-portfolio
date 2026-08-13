@@ -88,14 +88,6 @@ export const PROJECTS = [
     id: 3,
     title: "DanaKasa - Financial Planning & Education Platform",
     description: "Platform edukasi finansial modern dengan UI/UX premium. Dilengkapi kalkulator cerdas, integrasi Dark Mode dinamis yang bebas dari hydration error, serta animasi slider interaktif.",
-    image: "/images/hero/test4.png", // Ganti jika sudah ada gambar 3
-    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
-    href: "https://danakasa-next.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "DanaKasa - Financial Planning & Education Platform",
-    description: "Platform edukasi finansial modern dengan UI/UX premium. Dilengkapi kalkulator cerdas, integrasi Dark Mode dinamis yang bebas dari hydration error, serta animasi slider interaktif.",
     image: "/images/hero/test5.png", // Ganti jika sudah ada gambar 3
     tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
     href: "https://danakasa-next.vercel.app/",
