@@ -106,49 +106,33 @@ export const ALL_PROJECTS = [
   {
     id: 1,
     title: "Aksara Rental",
-    description: "Platform jual beli dan sewa kamera kelas premium dengan pengalaman 3D yang imersif.",
-    image: "/images/hero/test.png",
-    tags: ["Next.js", "Three.js", "AI", "SaaS"],
-    href: "https://aksara-rental-camera.vercel.app/",
+    description: "Platform Jual beli sewa kamera.",
+    image: "/images/hero/test.png", // Gambar kamu yang sudah diupload
+    tags: ["HTML", "CSS", "JavaScript", "Varcel"],
+    href: "https://aksara-rental-camera.vercel.app/", // Ganti dengan link proyek kamu
   },
   {
     id: 2,
     title: "SIPAKTI",
-    description: "Sistem peminjaman kelas kosong berbasis QR Code untuk mahasiswa. Mobile-first dengan PWA.",
-    image: "/images/hero/test3.png",
-    tags: ["React", "Face API", "PWA", "Firebase"],
+    description: "Sistem peminjeman kelas kosong berbasis QR Code  untuk mahasiswa. Mobile-first dengan PWA.",
+    image: "/images/hero/test3.png", // Ganti jika sudah ada gambar 2
+    tags: ["HTML", "CSS", "JavaScript", "Figma"],
     href: "https://siprakti.thegt.my.id/",
   },
   {
     id: 3,
-    title: "DanaKasa",
-    description: "Platform edukasi finansial modern dengan kalkulator cerdas dan dark mode dinamis.",
-    image: "/images/hero/test4.png",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    title: "DanaKasa - Financial Planning & Education Platform",
+    description: "Platform edukasi finansial modern dengan UI/UX premium. Dilengkapi kalkulator cerdas, integrasi Dark Mode dinamis yang bebas dari hydration error, serta animasi slider interaktif.",
+    image: "/images/hero/test5.png", // Ganti jika sudah ada gambar 3
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
     href: "https://danakasa-next.vercel.app/",
   },
   {
     id: 4,
-    title: "TaskFlow",
-    description: "Kanban-style productivity board dengan kolaborasi real-time dan drag-and-drop.",
-    image: "/images/hero/test5.png",
-    tags: ["React", "Socket.io", "Zustand", "Tailwind"],
-    href: "#",
-  },
-  {
-    id: 5,
-    title: "EcoTrack",
-    description: "Dashboard analitik karbon footprint dengan visualisasi data interaktif.",
-    image: "/images/hero/img-test1.png",
-    tags: ["Next.js", "D3.js", "Prisma", "PostgreSQL"],
-    href: "#",
-  },
-  {
-    id: 6,
-    title: "ShopVerse",
-    description: "E-commerce headless dengan checkout tanpa hambatan dan sistem rekomendasi AI.",
-    image: "/images/hero/img-project-1.png",
-    tags: ["Next.js", "Stripe", "AI", "tRPC"],
-    href: "#",
+    title: "Putra Bali Property - Real Estate & Property Platform",
+    description: "Desain UI/UX website properti modern yang berfokus pada kemudahan pencarian rumah, villa, dan tanah (freehold) di area Bali. Menampilkan antarmuka yang clean, user-friendly, dan terstruktur untuk mempermudah transaksi jual beli properti.",
+    image: "/images/hero/test6.png", // Ganti jika sudah ada gambar 3
+    tags: ["Figma", "Canva","UI/UX Design"],
+    href: "https://www.figma.com/proto/VuCbR8EhUsVqgeYQfDIQug/Untitled?page-id=0%3A1&node-id=736-4&viewport=-250%2C-488%2C0.24&t=dmLFuMyRx0zo6Q4U-1&scaling=scale-down&content-scaling=fixed",
   },
 ];

@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ankasaa | Personal Portfolio",
-  description: "Portfolio profesional Ankasaa - Frontend Developer & Full Stack Enthusiast",
+  title: "Andika | Personal Portfolio",
+  description: "Portfolio profesional Andika - Frontend Developer & Full Stack Enthusiast",
+  icons: {
+    icon: "/images/hero/itsme.png",
+    apple: "/images/hero/itsme.png",
+  },
 };
 
 export default function RootLayout({
