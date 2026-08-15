@@ -51,7 +51,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold text-zinc-900 dark:text-white hover:text-zinc-600 dark:hover:text-zinc-300 transition"
         >
-          Ankasaa
+          dev.andika
         </Link>
 
         {/* Desktop Menu */}
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile Menu (Dropdown) */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 py-4 px-6">
+        <div className="md:hidden bg-white/70 dark:bg-[#0d0d11]/80 backdrop-blur-md border-b border-zinc-200/50 dark:border-white/10 py-4 px-6 shadow-lg shadow-black/5 dark:shadow-black/20">
           <div className="flex flex-col gap-4">
             {NAVIGATION_LINKS.map((link) => (
               <Link

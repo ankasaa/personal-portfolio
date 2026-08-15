@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, MapPin, Send } from "lucide-react";
+import { Briefcase, Download, MapPin, Send } from "lucide-react";
 import Link from "next/link";
 
 export default function About() {
@@ -29,12 +29,23 @@ export default function About() {
               </p>
               
               {/* Tombol CTA */}
-              <Link 
-                href="/contact" 
-                className="mt-4 px-8 py-3.5 bg-black text-white text-sm font-semibold rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
-              >
-                Discuss a Project
-              </Link>
+              <div className="mt-4 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="px-8 py-3.5 bg-black text-white text-sm font-semibold rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
+                >
+                  Discuss a Project
+                </Link>
+
+                <a
+                  href="/cv-andika.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-8 py-3.5 border border-zinc-700 bg-transparent text-zinc-800 dark:text-zinc-200 text-sm font-semibold rounded-full shadow-sm hover:bg-white/5 hover:scale-105 active:scale-95 transition-all duration-200"
+                >
+                  <Download className="w-4 h-4" />
+                  Download CV
+                </a>
+              </div>
             </div>
 
             {/* KOLOM KANAN: Info Experience, Location, Freelance */}
