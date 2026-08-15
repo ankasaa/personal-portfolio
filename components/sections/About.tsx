@@ -62,7 +62,7 @@ export default function About() {
                     <Briefcase className="w-6 h-6 text-zinc-800 dark:text-zinc-300" />
                   </div>
                   <div>
-                    <p className="font-medium text-zinc-800 dark:text-zinc-200">3+ Years of Experience</p>
+                    <p className="font-medium text-zinc-800 dark:text-zinc-200">5+ Years of Experience</p>
                   </div>
                 </div>
 
