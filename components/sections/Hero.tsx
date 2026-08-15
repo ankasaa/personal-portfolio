@@ -365,6 +365,7 @@ function HeroBackdrop() {
 export default function Hero() {
   return (
     <section
+      id="home"
       className="relative flex min-h-screen items-center justify-center
         overflow-hidden px-4 py-24 md:px-8 lg:px-12"
     >

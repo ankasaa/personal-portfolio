@@ -10,10 +10,10 @@ export const PERSONAL_DATA = {
 };
 
 export const NAVIGATION_LINKS = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/#contact" },
+  { name: "Home", href: "/", spyId: "home" },
+  { name: "Sertifikat", href: "#sertifikat", spyId: "sertifikat" },
+  { name: "Projects", href: "#projects", spyId: "projects" },
+  { name: "Contact", href: "#about", spyId: "about" },
 ];
 export const CERTIFICATIONS = [
   {
@@ -73,7 +73,7 @@ export const PROJECTS = [
     title: "Aksara Rental",
     description: "Platform Jual beli sewa kamera.",
     image: "/images/hero/test.png", // Gambar kamu yang sudah diupload
-    tags: ["Next.js", "Three.js", "AI", "SaaS"],
+    tags: ["HTML", "CSS", "JavaScript", "Varcel"],
     href: "https://aksara-rental-camera.vercel.app/", // Ganti dengan link proyek kamu
   },
   {
@@ -81,7 +81,7 @@ export const PROJECTS = [
     title: "SIPAKTI",
     description: "Sistem peminjeman kelas kosong berbasis QR Code  untuk mahasiswa. Mobile-first dengan PWA.",
     image: "/images/hero/test3.png", // Ganti jika sudah ada gambar 2
-    tags: ["React", "Face API", "PWA", "Firebase"],
+    tags: ["HTML", "CSS", "JavaScript", "Figma"],
     href: "https://siprakti.thegt.my.id/",
   },
   {
@@ -91,6 +91,14 @@ export const PROJECTS = [
     image: "/images/hero/test5.png", // Ganti jika sudah ada gambar 3
     tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Vercel"],
     href: "https://danakasa-next.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Putra Bali Property - Real Estate & Property Platform",
+    description: "Desain UI/UX website properti modern yang berfokus pada kemudahan pencarian rumah, villa, dan tanah (freehold) di area Bali. Menampilkan antarmuka yang clean, user-friendly, dan terstruktur untuk mempermudah transaksi jual beli properti.",
+    image: "/images/hero/test6.png", // Ganti jika sudah ada gambar 3
+    tags: ["Figma", "Canva","UI/UX Design"],
+    href: "https://www.figma.com/proto/VuCbR8EhUsVqgeYQfDIQug/Untitled?page-id=0%3A1&node-id=736-4&viewport=-250%2C-488%2C0.24&t=dmLFuMyRx0zo6Q4U-1&scaling=scale-down&content-scaling=fixed",
   },
 ];
 

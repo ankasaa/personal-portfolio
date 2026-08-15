@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-20 md:py-32">
+    <section id="sertifikat" className="py-20 md:py-32">
       <Container>
         <div className="flex flex-col items-center text-center mb-12 md:mb-16">
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-semibold rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-400">
