@@ -74,7 +74,7 @@ export default function About() {
                 </button>
 
                 <a
-                  href="/cv-andika.pdf"
+                  href="/cv-Andika.pdf"
                   download
                   className="inline-flex items-center gap-2 px-8 py-3.5 border border-zinc-700 bg-transparent text-zinc-800 dark:text-zinc-200 text-sm font-semibold rounded-full shadow-sm hover:bg-white/5 hover:scale-105 active:scale-95 transition-all duration-200"
                 >
@@ -177,7 +177,7 @@ export default function About() {
 
                 <div className="flex justify-center gap-4 mt-6">
                   <a
-                    href="mailto:hello@andika.dev"
+                    href="Andikaboys005@gmail.com"
                     aria-label="Email"
                     className="p-4 rounded-full border border-zinc-200 dark:border-white/10 text-zinc-600 dark:text-zinc-300 hover:scale-110 hover:bg-slate-50 dark:hover:bg-white/5 transition-all duration-200"
                   >
@@ -185,7 +185,7 @@ export default function About() {
                   </a>
 
                   <a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/6281236079874"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
@@ -195,7 +195,7 @@ export default function About() {
                   </a>
 
                   <a
-                    href="https://discord.com/users/yourdiscordid"
+                    href="https://discord.com/users/ankasa18"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Discord"
